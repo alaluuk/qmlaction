@@ -9,6 +9,7 @@ Person::Person(QObject *parent):
 {
 
 }
+Person::~Person(){}
 
 QString Person::getId() const
 {
@@ -59,8 +60,32 @@ void Person::setTodatabase(){
                 query.addBindValue(this->lastname);
 
                 query.exec();
+                db.close();
+             }
             }
+
+
+void Person::delFromDatabase(){
+    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+            db.setDatabaseName("C:\\temp\\mydb.db");
+            db.open();
+
+            if (!db.open())
+            {
+                qDebug() <<"ERROR :"+ db.lastError().text();
+            }
+            else {
+                qDebug()<<"Connection Open";
+
+                QSqlQuery query;
+                query.prepare("delete from person where id=?");
+                query.addBindValue(this->id);
+
+                query.exec();
+            }
+            db.close();
 }
+
 QString Person::getData() {
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
             db.setDatabaseName("C:\\temp\\mydb.db");
@@ -85,7 +110,10 @@ QString Person::getData() {
                        row+=query.value(0).toString()+" : "+ query.value(1).toString()+" : "+query.value(2).toString()+"\n";
 
                    }
+                   db.close();
+
               return row;
+
             }
 
 }

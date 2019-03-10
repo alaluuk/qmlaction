@@ -13,6 +13,7 @@ class Person:public QObject
     Q_PROPERTY(QString getData READ getData)
 public:
     explicit Person(QObject *parent =nullptr);
+    ~Person();
 
     QString getId() const;
     QString getFirstname() const;
@@ -24,6 +25,7 @@ public slots:
     void setFirstname(const QString &value);
     void setLastname(const QString &value);
     void setTodatabase();
+    void delFromDatabase();
     QString getData();
 private:
     QString id;

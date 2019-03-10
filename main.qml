@@ -119,6 +119,7 @@ ApplicationWindow {
                     person.setFirstname(txtFname.text);
                     person.setLastname(txtLname.text);
                     person.setTodatabase();
+                    txtData.text=person.getData
                 }
                 background:
                             Rectangle {
@@ -131,5 +132,53 @@ ApplicationWindow {
                             }
             }
 
-
+        Text {
+            id: labelPoista
+            x: 280
+            y: 230
+            width: 200
+            height: 20
+            text: "Poista henkilö"
+            font.pixelSize: 12
+        }
+        Text {
+            id: labelDelId
+            x: 280
+            y: 260
+            width: 40
+            height: 20
+            text: "ID"
+            font.pixelSize: 12
+        }
+        TextField {
+            id: txtDelId
+            x:340
+            y:260
+            width: 140
+            height: 30
+            text: ""
+            placeholderText: qsTr("ID")
+        }
+        Button {
+                id: btnDel
+                x: 280
+                y: 300
+                width: 200
+                height: 30
+                text: qsTr("Poista")
+                onClicked: {
+                    person.setId(txtDelId.text);
+                    person.delFromDatabase();
+                    txtData.text=person.getData
+                }
+                background:
+                            Rectangle {
+                                implicitWidth: 100
+                                implicitHeight: 40
+                                color: "#64ADC6"
+                                border.color: "#26282a"
+                                border.width: 1
+                                radius: 4
+                            }
+            }
 }
