@@ -115,5 +115,55 @@ QString Person::getData() {
               return row;
 
             }
+}
+
+ void Person::getSelected() {
+        QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+                db.setDatabaseName("C:\\temp\\mydb.db");
+                db.open();
+
+                if (!db.open())
+                {
+                    qDebug() <<"ERROR :"+ db.lastError().text();
+
+                }
+                else {
+                    QSqlQuery query;
+                    query.prepare("select firstname,lastname from person where id = ?");
+                    query.addBindValue(this->id);
+                    query.exec();
+                   // qDebug()<<query.value(0).toString();
+                    while (query.next())
+                    {
+                        this->firstname=query.value(0).toString();
+                        this->lastname=query.value(1).toString();
+                    }
+                    db.close();
+                }
+
+}
+ void Person::updateSelected() {
+
+        QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
+                db.setDatabaseName("C:\\temp\\mydb.db");
+                db.open();
+
+                if (!db.open())
+                {
+                    qDebug() <<"ERROR :"+ db.lastError().text();
+
+                }
+                else {
+
+                    QSqlQuery query;
+                    query.prepare("update person set firstname=?,lastname=? where id = ?");
+
+                    query.addBindValue(this->firstname);
+                    query.addBindValue(this->lastname);
+                    query.addBindValue(this->id);
+                    query.exec();
+
+                    db.close();
+                }
 
 }

@@ -33,7 +33,7 @@ ApplicationWindow {
                             border.width: 1
                             radius: 4
                         }
-        }
+            }
 
         Text {
             id: txtData
@@ -43,6 +43,7 @@ ApplicationWindow {
             height: 30
             text: "Tulos"
             font.pixelSize: 12
+
         }
         Text {
             id: labeInfo
@@ -181,4 +182,122 @@ ApplicationWindow {
                                 radius: 4
                             }
             }
+
+
+        Text {
+            id: labelEtsi
+            x: 40
+            y: 230
+            width: 200
+            height: 20
+            text: "Etsi henkilö"
+            font.pixelSize: 12
+        }
+        Text {
+            id: labelSearchId
+            x: 40
+            y: 260
+            width: 40
+            height: 20
+            text: "ID"
+            font.pixelSize: 12
+        }
+        TextField {
+            id: txtSearchId
+            x:100
+            y:260
+            width: 140
+            height: 30
+            text: ""
+            placeholderText: qsTr("ID")
+        }
+        Button {
+                id: btnSearch
+                x: 40
+                y: 300
+                width: 200
+                height: 30
+                text: qsTr("Etsi")
+                onClicked: {
+                    person.setId(txtSearchId.text);
+                    person.getSelected();
+                    txtSearchFname.text=person.getFirstname;
+                    txtSearchLname.text=person.getLastname;
+
+                }
+                background:
+                            Rectangle {
+                                implicitWidth: 100
+                                implicitHeight: 40
+                                color: "#64ADC6"
+                                border.color: "#26282a"
+                                border.width: 1
+                                radius: 4
+                            }
+            }
+
+        Text {
+            id: labelSearchFname
+            x: 40
+            y: 340
+            width: 40
+            height: 20
+            text: "Etunimi"
+            font.pixelSize: 12
+        }
+        TextField {
+            id: txtSearchFname
+            x:100
+            y:340
+            width: 140
+            height: 30
+            text: ""
+            placeholderText: qsTr("Etunimi")
+        }
+        Text {
+            id: labelSearchLname
+            x: 40
+            y: 370
+            width: 40
+            height: 20
+            text: "Sukunimi"
+            font.pixelSize: 12
+        }
+        TextField {
+            id: txtSearchLname
+            x:100
+            y:370
+            width: 140
+            height: 30
+            text: ""
+            placeholderText: qsTr("Sukunimi")
+        }
+        Button {
+                id: btnUpdate
+                x: 40
+                y: 410
+                width: 200
+                height: 30
+                text: qsTr("Tallenna")
+                onClicked: {
+                    person.setFirstname(txtSearchFname.text);
+                    person.setLastname(txtSearchLname.text);
+                    person.updateSelected();
+                    txtSearchId.text="";
+                    txtSearchFname.text="";
+                    txtSearchLname.text="";
+                    txtData.text=person.getData
+                }
+                background:
+                            Rectangle {
+                                implicitWidth: 100
+                                implicitHeight: 40
+                                color: "#64ADC6"
+                                border.color: "#26282a"
+                                border.width: 1
+                                radius: 4
+                            }
+            }
+
+
 }

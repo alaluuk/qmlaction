@@ -27,6 +27,8 @@ public slots:
     void setTodatabase();
     void delFromDatabase();
     QString getData();
+    void getSelected();
+    void updateSelected();
 private:
     QString id;
     QString firstname;
