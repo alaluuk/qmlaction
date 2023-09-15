@@ -25,7 +25,7 @@ insert into Person values(2,'Liisa','Joki');
 </ol>
 Nyt sinun pitäisi saada Qt-sovelluksella näkyviin tietokanna tiedot ja lisääminen, poistaminen ja päivitys pitäisi onnistua.
 
-## Sovellus
+## Qt/QML Sovellus
 
 Sovellus näyttää seuraavalta:
 
