@@ -27,6 +27,6 @@ Nyt sinun pitäisi saada Qt-sovelluksella näkyviin tietokanna tiedot ja lisää
 
 ## Sovellus
 
-Sovellus näyttää seuraavalta 
+Sovellus näyttää seuraavalta:
 
 <img src="application.jpg">
