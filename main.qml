@@ -46,7 +46,7 @@ ApplicationWindow {
 
         }
         Text {
-            id: labeInfo
+            id: labelInfo
             x: 280
             y: 20
             width: 200
@@ -73,7 +73,7 @@ ApplicationWindow {
             placeholderText: qsTr("ID")
         }
         Text {
-            id: labeFname
+            id: labelFname
             x: 280
             y: 100
             width: 40
@@ -91,7 +91,7 @@ ApplicationWindow {
             placeholderText: qsTr("Etunimi")
         }
         Text {
-            id: labeLname
+            id: labelLname
             x: 280
             y: 140
             width: 40
