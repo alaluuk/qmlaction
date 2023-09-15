@@ -22,5 +22,11 @@ create table Person(
 insert into Person values(1,'Teppo','Testi');
 insert into Person values(2,'Liisa','Joki');
 </pre></li>
-<li></li>
 </ol>
+Nyt sinun pitäisi saada Qt-sovelluksella näkyviin tietokanna tiedot ja lisääminen, poistaminen ja päivitys pitäisi onnistua.
+
+## Sovellus
+
+Sovellus näyttää seuraavalta 
+
+<img src="application.jpg">
