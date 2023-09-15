@@ -1,4 +1,4 @@
-#QML SQLITE Esimerkki
+# QML SQLITE Esimerkki
 
 ## SQLite tietokanta
 
