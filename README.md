@@ -9,6 +9,9 @@ Kun purat sen saat tiedoston sqlite3.exe. Ja, jos kopioit sen vaikka kansioon c:
 <pre>
 c:\sqlite\sqlite3 
 </pre>
+Olen määrittänyt tiedostossa person.cpp, että tietokanta(mydb.db) sijaitsee kansiossa **c:\temp**.
+Jos, et muokkaa sitä, sinun tulee luoda mainittuun kansioon tuon niminen tietokanta-tiedosto.
+
 Voit luoda tietokannan seuraavasti: 
 <ol>
 <li>Kansiossa <b>temp</b> anna komento <b>c:\sqlite\sqlite3 mydb.db</b>  </li>
