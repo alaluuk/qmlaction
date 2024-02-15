@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'person.h'
 **
-** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.0)
+** Created by: The Qt Meta Object Compiler version 68 (Qt 6.5.2)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -21,7 +21,7 @@ QT_BEGIN_MOC_NAMESPACE
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'person.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
-#error "This file was generated using the moc from 6.5.0. It"
+#error "This file was generated using the moc from 6.5.2. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -44,7 +44,7 @@ static constexpr auto qt_meta_stringdata_CLASSPersonENDCLASS = QtMocHelpers::str
     "value",
     "setFirstname",
     "setLastname",
-    "setTodatabase",
+    "addTodatabase",
     "delFromDatabase",
     "getData",
     "getSelected",
@@ -81,7 +81,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSPersonENDCLASS_t qt_meta_string
         QT_MOC_LITERAL(14, 5),  // "value"
         QT_MOC_LITERAL(20, 12),  // "setFirstname"
         QT_MOC_LITERAL(33, 11),  // "setLastname"
-        QT_MOC_LITERAL(45, 13),  // "setTodatabase"
+        QT_MOC_LITERAL(45, 13),  // "addTodatabase"
         QT_MOC_LITERAL(59, 15),  // "delFromDatabase"
         QT_MOC_LITERAL(75, 7),  // "getData"
         QT_MOC_LITERAL(83, 11),  // "getSelected"
@@ -96,7 +96,7 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSPersonENDCLASS_t qt_meta_string
     "value",
     "setFirstname",
     "setLastname",
-    "setTodatabase",
+    "addTodatabase",
     "delFromDatabase",
     "getData",
     "getSelected",
@@ -177,7 +177,7 @@ Q_CONSTINIT const QMetaObject Person::staticMetaObject = { {
         // method 'setLastname'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const QString &, std::false_type>,
-        // method 'setTodatabase'
+        // method 'addTodatabase'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'delFromDatabase'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
@@ -200,7 +200,7 @@ void Person::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 0: _t->setId((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 1: _t->setFirstname((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         case 2: _t->setLastname((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 3: _t->setTodatabase(); break;
+        case 3: _t->addTodatabase(); break;
         case 4: _t->delFromDatabase(); break;
         case 5: { QString _r = _t->getData();
             if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;

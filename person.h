@@ -2,6 +2,7 @@
 #define PERSON_H
 #include<QString>
 #include<QObject>
+#include <QSqlDatabase>
 
 
 class Person:public QObject
@@ -24,7 +25,7 @@ public slots:
     void setId(const QString &value);
     void setFirstname(const QString &value);
     void setLastname(const QString &value);
-    void setTodatabase();
+    void addTodatabase();
     void delFromDatabase();
     QString getData();
     void getSelected();
@@ -33,6 +34,8 @@ private:
     QString id;
     QString firstname;
     QString lastname;
+    QSqlDatabase db;
+    QString myFolder;
 };
 
 #endif // PERSON_H

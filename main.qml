@@ -119,7 +119,7 @@ ApplicationWindow {
                     person.setId(txtId.text);
                     person.setFirstname(txtFname.text);
                     person.setLastname(txtLname.text);
-                    person.setTodatabase();
+                    person.addTodatabase();
                     txtData.text=person.getData
                 }
                 background:
