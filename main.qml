@@ -24,33 +24,23 @@ ApplicationWindow {
         }
     }
 
-    Text {
+    MyText {
         id: txtData
         x: 40
         y: 60
-        width: 200
-        height: 30
-        text: "Tulos"
-        font.pixelSize: 12
-
+        text: ""
     }
-    Text {
+    MyText {
         id: labelInfo
         x: 280
         y: 20
-        width: 200
-        height: 20
         text: "Lisää henkilö"
-        font.pixelSize: 12
     }
-    Text {
+    MyText {
         id: labelID
         x: 280
         y: 60
-        width: 40
-        height: 20
         text: "ID"
-        font.pixelSize: 12
     }
     TextField {
         id: txtId
@@ -61,14 +51,11 @@ ApplicationWindow {
         text: ""
         placeholderText: qsTr("ID")
     }
-    Text {
+    MyText {
         id: labelFname
         x: 280
         y: 100
-        width: 40
-        height: 20
         text: "Etunimi"
-        font.pixelSize: 12
     }
     TextField {
         id: txtFname
@@ -79,14 +66,11 @@ ApplicationWindow {
         text: ""
         placeholderText: qsTr("Etunimi")
     }
-    Text {
+    MyText {
         id: labelLname
         x: 280
         y: 140
-        width: 40
-        height: 20
         text: "Sukunimi"
-        font.pixelSize: 12
     }
     TextField {
         id: txtLname
@@ -111,23 +95,18 @@ ApplicationWindow {
         }
     }
 
-    Text {
+    MyText {
         id: labelPoista
         x: 280
         y: 230
-        width: 200
-        height: 20
         text: "Poista henkilö"
-        font.pixelSize: 12
     }
-    Text {
+
+    MyText {
         id: labelDelId
         x: 280
         y: 260
-        width: 40
-        height: 20
         text: "ID"
-        font.pixelSize: 12
     }
     TextField {
         id: txtDelId
@@ -151,23 +130,17 @@ ApplicationWindow {
         }
     }
 
-    Text {
+    MyText {
         id: labelEtsi
         x: 40
         y: 230
-        width: 200
-        height: 20
         text: "Etsi henkilö"
-        font.pixelSize: 12
     }
-    Text {
+    MyText {
         id: labelSearchId
         x: 40
         y: 260
-        width: 40
-        height: 20
         text: "ID"
-        font.pixelSize: 12
     }
     TextField {
         id: txtSearchId
@@ -192,14 +165,11 @@ ApplicationWindow {
         }
     }
 
-    Text {
+    MyText {
         id: labelSearchFname
         x: 40
         y: 340
-        width: 40
-        height: 20
         text: "Etunimi"
-        font.pixelSize: 12
     }
     TextField {
         id: txtSearchFname
@@ -210,14 +180,11 @@ ApplicationWindow {
         text: ""
         placeholderText: qsTr("Etunimi")
     }
-    Text {
+    MyText {
         id: labelSearchLname
         x: 40
         y: 370
-        width: 40
-        height: 20
         text: "Sukunimi"
-        font.pixelSize: 12
     }
     TextField {
         id: txtSearchLname
@@ -244,6 +211,5 @@ ApplicationWindow {
             txtData.text=person.getData
         }
     }
-
 
 }
