@@ -4,7 +4,6 @@ import QtQuick.Controls 2.12
 Button {
     width: 200
     height: 35
-    // Määrittele haluamasi tyyli tässä
     background: Rectangle {
         color: "#0096FF"
         border.color: "#26282a"
