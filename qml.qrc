@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>MyButton.qml</file>
         <file>MyText.qml</file>
+        <file>MyTextField.qml</file>
     </qresource>
 </RCC>

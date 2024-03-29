@@ -42,12 +42,11 @@ ApplicationWindow {
         y: 60
         text: "ID"
     }
-    TextField {
+
+    MyTextField {
         id: txtId
         x:340
         y:60
-        width: 140
-        height: 30
         text: ""
         placeholderText: qsTr("ID")
     }
@@ -57,12 +56,10 @@ ApplicationWindow {
         y: 100
         text: "Etunimi"
     }
-    TextField {
+    MyTextField {
         id: txtFname
         x:340
         y:100
-        width: 140
-        height: 30
         text: ""
         placeholderText: qsTr("Etunimi")
     }
@@ -72,12 +69,10 @@ ApplicationWindow {
         y: 140
         text: "Sukunimi"
     }
-    TextField {
+    MyTextField {
         id: txtLname
         x:340
         y:140
-        width: 140
-        height: 30
         text: ""
         placeholderText: qsTr("Sukunimi")
     }
@@ -108,12 +103,10 @@ ApplicationWindow {
         y: 260
         text: "ID"
     }
-    TextField {
+    MyTextField {
         id: txtDelId
         x:340
         y:260
-        width: 140
-        height: 30
         text: ""
         placeholderText: qsTr("ID")
     }
@@ -142,12 +135,10 @@ ApplicationWindow {
         y: 260
         text: "ID"
     }
-    TextField {
+    MyTextField {
         id: txtSearchId
         x:100
         y:260
-        width: 140
-        height: 30
         text: ""
         placeholderText: qsTr("ID")
     }
@@ -171,12 +162,10 @@ ApplicationWindow {
         y: 340
         text: "Etunimi"
     }
-    TextField {
+    MyTextField {
         id: txtSearchFname
         x:100
         y:340
-        width: 140
-        height: 30
         text: ""
         placeholderText: qsTr("Etunimi")
     }
@@ -186,12 +175,10 @@ ApplicationWindow {
         y: 370
         text: "Sukunimi"
     }
-    TextField {
+    MyTextField {
         id: txtSearchLname
         x:100
         y:370
-        width: 140
-        height: 30
         text: ""
         placeholderText: qsTr("Sukunimi")
     }

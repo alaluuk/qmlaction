@@ -6,7 +6,7 @@ Button {
     height: 35
     // Määrittele haluamasi tyyli tässä
     background: Rectangle {
-        color: "#64ADC6"
+        color: "#0096FF"
         border.color: "#26282a"
         border.width: 2
         radius: 6
