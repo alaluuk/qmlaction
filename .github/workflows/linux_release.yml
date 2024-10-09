@@ -20,7 +20,7 @@ defaults:
 env:
   SOURCE_DIR:   ${{ github.workspace }}
   QT_VERSION:   5.15.2
-  ARTIFACT:     qt-planets-linux-build.AppImage
+  ARTIFACT:     qtaction-linux-build.AppImage
 
 jobs:
   build:
