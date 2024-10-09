@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<RCC>
+    <qresource prefix="/">
+        <file alias="main.qml">../main.qml</file>
+        <file alias="MyButton.qml">../MyButton.qml</file>
+        <file alias="MyText.qml">../MyText.qml</file>
+        <file alias="MyTextField.qml">../MyTextField.qml</file>
+    </qresource>
+</RCC>
